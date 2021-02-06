@@ -1,5 +1,7 @@
-C Primer Plus
+C Primer Plus 练习题解答
 ---
+
+code by 郑勤建
 
 ### 章节
 
