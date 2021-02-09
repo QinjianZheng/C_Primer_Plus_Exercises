@@ -16,7 +16,6 @@ Enter the number corresponding to the desired pay rate or action:
 */
 
 #include <stdio.h>
-#define BASE 10
 #define OVERTIME_HOUR_MUL 1.5
 #define NORMAL_HOUR 40
 #define FIRST_BUCKET  300
@@ -79,9 +78,9 @@ int main(int argc, char const *argv[])
         scanf("%d", &hour);
 
         if(hour <= NORMAL_HOUR) {
-            sarary = BASE * hour;
+            sarary = sararyRate * hour;
         } else {
-            sarary = BASE * (NORMAL_HOUR + (hour - NORMAL_HOUR) * OVERTIME_HOUR_MUL);
+            sarary = sararyRate * (NORMAL_HOUR + (hour - NORMAL_HOUR) * OVERTIME_HOUR_MUL);
         }
         if(sarary <= FIRST_BUCKET) {
             tax = sarary * RATE_LOWER_THAN_300;
