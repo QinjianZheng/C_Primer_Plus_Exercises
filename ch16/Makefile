@@ -43,7 +43,7 @@ ex7.o: ex7.c
 	$(CC) $(CCFLAGS) -c $^
 
 clean:
-	rm -rf *.o *.dSYMex1 ex2 ex3 ex4 ex5 ex6 ex7 
+	rm -rf *.o *.dSYM ex1 ex2 ex3 ex4 ex5 ex6 ex7 
 
 create:
 	for ((i=1;i<=7;i++)); do touch ex$$i.c;         echo \/\* $$i\*\/ \\n\\n#include \<stdio.h\> > ex$$i.c;done
