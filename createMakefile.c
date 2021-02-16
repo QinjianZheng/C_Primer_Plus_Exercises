@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
     FOR_EACH {
         fprintf(f, "ex%d.o: ex%d.c\n\t$(CC) $(CCFLAGS) -c $^\n\n", i, i);
     }
-    fprintf(f, "clean:\n\trm -rf *.o *.dSYM");
+    fprintf(f, "clean:\n\trm -rf *.o *.dSYM ");
     FOR_EACH {
         fprintf(f, "ex%d ", i);
     }
