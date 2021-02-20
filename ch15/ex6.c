@@ -63,7 +63,7 @@ int main(int argc, char const *argv[])
         case 'a':
             
             printf("Select alignment:\n");
-            printf("l) left    c) center    r) righta\n");
+            printf("l) left    c) center    r) right\n");
             while (getchar() != '\n') {
                 continue;
             }
